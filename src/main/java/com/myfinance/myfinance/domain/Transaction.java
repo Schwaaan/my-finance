@@ -1,15 +1,11 @@
 package com.myfinance.myfinance.domain;
 
 import com.myfinance.myfinance.domain.enums.TransactionStatus;
-import com.myfinance.myfinance.domain.enums.TransactionType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.*;
-import javax.transaction.Transactional;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @Entity
@@ -34,7 +30,7 @@ public class Transaction {
     private BigDecimal amount;
 
     @OneToOne
-    @JoinColumn(name = "applicationUser_id")
+    @JoinColumn(name = "users_id", referencedColumnName = "id")
     private ApplicationUser applicationUser;
 
 

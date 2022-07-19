@@ -83,8 +83,7 @@ public class TransactionServiceImpl implements TransactionService {
         BigDecimal amountParcel = transactionDTO.getAmount().divide(new BigDecimal(transactionDTO.getParcels())).setScale(2);
 
         for (int i = 0; i < transactionDTO.getParcels(); i++) {
-            scheduleTransactionRepository.save(new ScheduledTransaction(toAccount, fromAccount, transactionDTO.getParcels() - i,
-                    amountParcel, applicationUser));
+            scheduleTransactionRepository.save(new ScheduledTransaction(toAccount, fromAccount, transactionDTO.getParcels() - i, amountParcel, applicationUser));
         }
 
         return transactionDTO;

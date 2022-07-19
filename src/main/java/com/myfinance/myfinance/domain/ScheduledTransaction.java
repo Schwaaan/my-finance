@@ -5,7 +5,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.Instant;
 
 @Data
 @Entity
@@ -29,7 +28,7 @@ public class ScheduledTransaction {
     private BigDecimal amountPayable;
 
     @OneToOne
-    @JoinColumn(name = "applicationUser_id")
+    @JoinColumn(name = "users_id", referencedColumnName = "id")
     private ApplicationUser applicationUser;
 
     public ScheduledTransaction(Account toAccount, Account fromAccount, Integer parcels, BigDecimal amountPayable, ApplicationUser applicationUser) {

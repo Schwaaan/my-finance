@@ -1,7 +1,6 @@
 package com.myfinance.myfinance.repository;
 
 import com.myfinance.myfinance.domain.ScheduledTransaction;
-import com.myfinance.myfinance.domain.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

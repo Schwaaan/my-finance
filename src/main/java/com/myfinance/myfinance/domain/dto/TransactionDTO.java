@@ -1,7 +1,5 @@
 package com.myfinance.myfinance.domain.dto;
 
-import com.myfinance.myfinance.domain.Account;
-import com.myfinance.myfinance.domain.ApplicationUser;
 import com.myfinance.myfinance.domain.enums.TransactionType;
 import lombok.Data;
 

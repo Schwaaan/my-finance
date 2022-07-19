@@ -2,7 +2,7 @@ package com.myfinance.myfinance.domain.enums;
 
 import lombok.Getter;
 
-public enum  TransactionStatus {
+public enum TransactionStatus {
 
     SUCESS(1, "Transação Realizada"), REVERT(2, "Transação Revertida");
 
