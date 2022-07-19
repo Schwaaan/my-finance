@@ -3,7 +3,7 @@ package com.myfinance.myfinance.domain.enums;
 import lombok.Getter;
 
 public enum TransactionType {
-    PIX("PIX", 1), AGEND("AGENDADA", 2);
+    PIX("PIX", 1), SCHEDULED("AGENDADA", 2);
 
     @Getter
     private String description;

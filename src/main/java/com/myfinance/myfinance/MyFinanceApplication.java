@@ -9,7 +9,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class MyFinanceApplication implements CommandLineRunner {
+public class MyFinanceApplication {
 
 	@Autowired
 	private AccountRepository accountRepository;
@@ -19,7 +19,4 @@ public class MyFinanceApplication implements CommandLineRunner {
 		SpringApplication.run(MyFinanceApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-	}
 }

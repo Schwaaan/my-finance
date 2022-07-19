@@ -26,6 +26,7 @@ public class Account implements Serializable {
 
     @OneToOne
     @JoinColumn(name = "users_id", referencedColumnName = "id")
+    @NotNull(message = "O usuário dono da conta não pode ser nulo")
     private ApplicationUser applicationUser;
 
     public Account(String name, BigDecimal value, ApplicationUser applicationUser) {
